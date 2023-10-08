@@ -1,6 +1,6 @@
 {
   "name": "knex-pgsql-edgeruntime",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "A patched knex build for the edge runtime",
   "main": "knex",
   "types": "types/index.d.ts",
@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "colorette": "2.0.19",
+    "@edge-runtime/ponyfill": "^2.4.1",
     "commander": "^10.0.0",
     "debug": "4.3.4",
     "escalade": "^3.1.1",

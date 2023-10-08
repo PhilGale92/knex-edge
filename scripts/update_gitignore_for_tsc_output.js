@@ -68,7 +68,9 @@ function main(cliCommand) {
       // Always use POSIX-style path separators - .gitignore requires it
       return relativeJsPath.split(path.sep).join(path.posix.sep);
     });
-    const jsFilesToIgnoreString = jsFilesToIgnore.join('\n');
+    // TODO - disabled as it was wiping out the dialect file which is the only one there
+    // const jsFilesToIgnoreString = jsFilesToIgnore.join('\n');
+    const jsFilesToIgnoreString = '';
     const libGitignorePath = path.join(libDirectory, '.gitignore');
     fs.writeFileSync(
       libGitignorePath,

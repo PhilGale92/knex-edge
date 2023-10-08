@@ -1,6 +1,6 @@
 {
   "name": "knex-pgsql-edgeruntime",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "A patched knex build for the edge runtime",
   "main": "knex",
   "types": "types/index.d.ts",

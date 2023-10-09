@@ -2,7 +2,7 @@
 
 const test = require('tape');
 const Client = require('../../lib/dialects/sqlite3');
-const tarn = require('tarn');
+const tarn = require('tarn-edgeruntime');
 const Pool = tarn.Pool;
 const knexfile = require('../knexfile');
 const makeKnex = require('../../knex');

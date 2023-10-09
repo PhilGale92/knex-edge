@@ -1,6 +1,6 @@
 {
   "name": "knex-pgsql-edgeruntime",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "A patched knex build for the edge runtime",
   "main": "knex",
   "types": "types/index.d.ts",
@@ -76,7 +76,7 @@
     "pg-connection-string": "2.6.1",
     "rechoir": "^0.8.0",
     "resolve-from": "^5.0.0",
-    "tarn": "^3.0.2",
+    "tarn-edgeruntime": "^3.0.0",
     "tildify": "2.0.0"
   },
   "peerDependenciesMeta": {

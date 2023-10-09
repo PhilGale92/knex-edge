@@ -6,7 +6,7 @@
 //                 Shrey Jain <https://github.com/shreyjain1994>
 // TypeScript Version: 4.1
 
-import tarn = require('tarn');
+import tarn = require('tarn-edgeruntime');
 import events = require('events');
 import stream = require('stream');
 import ResultTypes = require('./result');

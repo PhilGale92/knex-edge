@@ -6,6 +6,7 @@ const tildify = require('tildify');
 const argv = require('getopts')(process.argv.slice(2));
 const color = {
   yellow: (msg) => msg,
+  blue: (msg) => msg,
   red: (msg) => msg,
   green: (msg) => msg,
   cyan: (msg) => msg,

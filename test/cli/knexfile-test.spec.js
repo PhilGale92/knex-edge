@@ -6,6 +6,7 @@ const tildify = require('tildify');
 const { FileTestHelper, execCommand } = require('cli-testlab');
 const color = {
   yellow: (msg) => msg,
+  blue: (msg) => msg,
   red: (msg) => msg,
   green: (msg) => msg,
   cyan: (msg) => msg,

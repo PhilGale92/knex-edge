@@ -31,6 +31,7 @@ const {
 const { listMigrations } = require('./utils/migrationsLister');
 const color = {
   yellow: (msg) => msg,
+  blue: (msg) => msg,
   red: (msg) => msg,
   green: (msg) => msg,
   cyan: (msg) => msg,

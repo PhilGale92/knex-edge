@@ -4,8 +4,13 @@ const path = require('path');
 const tildify = require('tildify');
 
 const { FileTestHelper, execCommand } = require('cli-testlab');
-const color = require('colorette');
-
+const color = {
+  yellow: (msg) => msg,
+  red: (msg) => msg,
+  green: (msg) => msg,
+  cyan: (msg) => msg,
+  magenta: (msg) => msg,
+};
 const KNEX = path.normalize(__dirname + '/../../bin/cli.js');
 
 describe('knexfile', () => {

@@ -3,9 +3,14 @@ const { resolveClientNameWithAliases } = require('../../lib/util/helpers');
 const path = require('path');
 const escalade = require('escalade/sync');
 const tildify = require('tildify');
-const color = require('colorette');
 const argv = require('getopts')(process.argv.slice(2));
-
+const color = {
+  yellow: (msg) => msg,
+  red: (msg) => msg,
+  green: (msg) => msg,
+  cyan: (msg) => msg,
+  magenta: (msg) => msg,
+};
 function parseConfigObj(opts) {
   const config = { migrations: {} };
 

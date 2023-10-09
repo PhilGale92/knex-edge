@@ -6,7 +6,6 @@ const resolveFrom = require('resolve-from');
 const path = require('path');
 const tildify = require('tildify');
 const commander = require('commander');
-const color = require('colorette');
 const argv = require('getopts')(process.argv.slice(2));
 const cliPkg = require('../package');
 const {
@@ -30,7 +29,13 @@ const {
 } = require('../lib/migrations/util/fs');
 
 const { listMigrations } = require('./utils/migrationsLister');
-
+const color = {
+  yellow: (msg) => msg,
+  red: (msg) => msg,
+  green: (msg) => msg,
+  cyan: (msg) => msg,
+  magenta: (msg) => msg,
+};
 async function openKnexfile(configPath) {
   const importFile = require('../lib/migrations/util/import-file'); // require me late!
   let config = await importFile(configPath);

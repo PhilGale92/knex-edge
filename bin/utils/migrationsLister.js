@@ -1,4 +1,10 @@
-const color = require('colorette');
+const color = {
+  yellow: (msg) => msg,
+  red: (msg) => msg,
+  green: (msg) => msg,
+  cyan: (msg) => msg,
+  magenta: (msg) => msg,
+};
 
 const { success } = require('./cli-config-utils');
 
